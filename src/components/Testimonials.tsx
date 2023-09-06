@@ -10,61 +10,37 @@ import avatarImage5 from '@/images/avatars/avatar-5.png'
 const testimonials = [
   [
     {
-      content:
-        'TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.',
+      content: "The technician was knowledgeable, professional, and punctual. He even added a direct shutoff to my fridge's copper tube during instillation of my unit. I highly recommend Koolrunning.",
       author: {
-        name: 'Sheryl Berge',
-        role: 'CEO at Lynch LLC',
+        name: 'Per Son',
+        service: 'Appliance installation',
         image: avatarImage1,
       },
     },
     {
-      content:
-        'I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they are saying it has something to do with my books. Please get back to me right away.',
+      content: 'Absolutely amazing service. I can say for once this company is the one company I seen so far that actually comes out and gives the proper service the clients pay for instead of just taking your money. He accurately diagnosed our ice machine and did the most thorough proper cleaning I&apos;ve ever seen you were over and beyond and also started cleaning other things that wasn&apos;t even the priority he was being paid for absolutely amazing service. I&apos;ve dealt with plenty of repair companies and by far this one is the best it&apos;s night and day I would not call anybody except for this company here trust me, your money will be well. Spent not wasted',
       author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
+        name: 'David Miller',
+        service: 'Freezer Repair',
         image: avatarImage4,
       },
     },
   ],
   [
     {
-      content:
-        'The best part about TaxPal is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.',
+      content: "Koolrunning is the best when it comes to appliance repairs. Vinton knows his stuff, honest and well mannered tech, he also tells you like it is -that’s what we like about him. Great reasonable and fair prices for repair work. Staff willing to go out of there way to inform you on appointment times and even if running a little late. I highly recommend Koolrunning Appliance and Refrigeration",
       author: {
-        name: 'Leland Kiehn',
-        role: 'Founder of Kiehn and Sons',
+        name: 'Donnieb Brown',
+        service: 'Refrigerator repair',
         image: avatarImage5,
       },
     },
     {
-      content:
-        'There are so many things I had to do with my old software that I just don’t do at all with TaxPal. Suspicious but I can’t say I don’t love it.',
+      content: "Koolrunning is the best when it comes to appliance repairs. Vinton knows his stuff, honest and well mannered tech, he also tells you like it is -that’s what we like about him. Great reasonable and fair prices for repair work. Staff willing to go out of there way to inform you on appointment times and even if running a little late. I highly recommend Koolrunning Appliance and Refrigeration",
       author: {
-        name: 'Erin Powlowski',
-        role: 'COO at Armstrong Inc',
-        image: avatarImage2,
-      },
-    },
-  ],
-  [
-    {
-      content:
-        'I used to have to remit tax to the EU and with TaxPal I somehow don’t have to do that anymore. Nervous to travel there now though.',
-      author: {
-        name: 'Peter Renolds',
-        role: 'Founder of West Inc',
-        image: avatarImage3,
-      },
-    },
-    {
-      content:
-        'This is the fourth email I’ve sent to your support team. I am literally being held in jail for tax fraud. Please answer your damn emails, this is important.',
-      author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
-        image: avatarImage4,
+        name: 'Donnieb Brown',
+        service: 'Refrigerator repair',
+        image: avatarImage5,
       },
     },
   ],
@@ -88,17 +64,12 @@ export function Testimonials() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Loved by businesses worldwide.
+            Loved across the county
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Our software is so simple that people can’t help but fall in love
-            with it. Simplicity is easy when you just skip tons of
-            mission-critical features.
-          </p>
         </div>
         <ul
           role="list"
-          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3"
+          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-2"
         >
           {testimonials.map((column, columnIndex) => (
             <li key={columnIndex}>
@@ -118,7 +89,7 @@ export function Testimonials() {
                             {testimonial.author.name}
                           </div>
                           <div className="mt-1 text-sm text-slate-500">
-                            {testimonial.author.role}
+                            {testimonial.author.service}
                           </div>
                         </div>
                         <div className="overflow-hidden rounded-full bg-slate-50">

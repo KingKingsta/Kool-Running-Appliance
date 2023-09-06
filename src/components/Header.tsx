@@ -1,5 +1,5 @@
 'use client'
-
+import Image from 'next/image'
 import { Fragment } from 'react'
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
@@ -104,10 +104,10 @@ export function Header() {
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
             <Link href="#" aria-label="Home">
-              <Logo className="h-10 w-auto" />
+              {/* <Logo /> */}
+              <Image src={"/1200px-Flag_of_Jamaica.svg.webp"} width={100} height={100} alt="Kool Running Appliance Logo" />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#features">Features</NavLink>
               <NavLink href="#testimonials">Testimonials</NavLink>
               <NavLink href="#pricing">Pricing</NavLink>
             </div>
@@ -116,7 +116,7 @@ export function Header() {
             <div className="hidden md:block">
               <NavLink href="/login">Sign in</NavLink>
             </div>
-            <Button href="/register" color="blue">
+            <Button href="/register" color="slate">
               <span>
                 Get started <span className="hidden lg:inline">today</span>
               </span>

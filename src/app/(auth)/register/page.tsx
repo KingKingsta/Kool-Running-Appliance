@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import { Button } from '@/components/Button'
-import { SelectField, TextField } from '@/components/Fields'
+import { SelectField, TextArea, TextField } from '@/components/Fields'
 import { Logo } from '@/components/Logo'
 import { SlimLayout } from '@/components/SlimLayout'
 import { type Metadata } from 'next'
@@ -19,7 +19,7 @@ export default function Register() {
         </Link>
       </div>
       <h2 className="mt-20 text-lg font-semibold text-gray-900">
-        Get started for free
+        
       </h2>
       <p className="mt-2 text-sm text-gray-700">
         Already registered?{' '}
@@ -57,28 +57,16 @@ export default function Register() {
           autoComplete="email"
           required
         />
-        <TextField
+        <TextArea
           className="col-span-full"
-          label="Password"
-          name="password"
-          type="password"
-          autoComplete="new-password"
+          label="Describe your issue"
+          name="description-area"
           required
         />
-        <SelectField
-          className="col-span-full"
-          label="How did you hear about us?"
-          name="referral_source"
-        >
-          <option>AltaVista search</option>
-          <option>Super Bowl commercial</option>
-          <option>Our route 34 city bus ad</option>
-          <option>The “Never Use This” podcast</option>
-        </SelectField>
         <div className="col-span-full">
           <Button type="submit" variant="solid" color="blue" className="w-full">
             <span>
-              Sign up <span aria-hidden="true">&rarr;</span>
+              Get quote <span aria-hidden="true">&rarr;</span>
             </span>
           </Button>
         </div>
