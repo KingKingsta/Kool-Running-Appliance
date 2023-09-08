@@ -29,7 +29,6 @@ export default function Login() {
         >
           Sign up
         </Link>{' '}
-        for a free trial.
       </p>
       <form action="#" className="mt-10 grid grid-cols-1 gap-y-8">
         <TextField

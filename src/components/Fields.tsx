@@ -41,7 +41,7 @@ export function TextArea({
   return (
     <div className={className}>
       {label && <Label id={id}>{label}</Label>}
-      <textarea id={id} cols={10} {...props} className={formClasses} />
+      <textarea id={id} rows={5} {...props} className={formClasses} />
     </div>
   )
 }

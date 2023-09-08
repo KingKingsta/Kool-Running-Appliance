@@ -19,18 +19,8 @@ export default function Register() {
         </Link>
       </div>
       <h2 className="mt-20 text-lg font-semibold text-gray-900">
-        
+        How can we help you?
       </h2>
-      <p className="mt-2 text-sm text-gray-700">
-        Already registered?{' '}
-        <Link
-          href="/login"
-          className="font-medium text-blue-600 hover:underline"
-        >
-          Sign in
-        </Link>{' '}
-        to your account.
-      </p>
       <form
         action="#"
         className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2"

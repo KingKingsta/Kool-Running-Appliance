@@ -55,6 +55,7 @@ function QuoteIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export function Testimonials() {
+
   return (
     <section
       id="testimonials"

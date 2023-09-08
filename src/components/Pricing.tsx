@@ -72,31 +72,31 @@ export function Pricing() {
     <section
       id="pricing"
       aria-label="Pricing"
-      className="bg-slate-900 py-20 sm:py-32"
+      className="bg-slate-200 py-20 sm:py-32"
     >
       <Container>
         <div className="md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
+          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
             <span className="relative whitespace-nowrap">
               {/* <SwirlyDoodle className="absolute left-0 top-1/2 h-[1em] w-full fill-blue-400" /> */}
               <span className="relative">Simple</span>
             </span>{' '}
             for everyone.
           </h2>
-          <p className="mt-4 text-lg text-slate-400">
+          <p className="mt-4 text-lg text-slate-900">
             No matter the problem, we make sure your appliances work well for you.
           </p>
         </div>
         
-        <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+        <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-700 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
           <div className="p-8 sm:p-10 lg:flex-auto">
             <h3 className="text-2xl font-bold tracking-tight text-gray-900">Lifetime membership</h3>
             <p className="mt-6 text-base leading-7 text-gray-600">
-              Since __DATE__, we&apos;ve continued to expand our pallete, gain more expertise, and better understand you&apos;re needs
+              Since 2023, we continue to expand our pallete, gain more expertise, and better understand you&apos;re needs
             </p>
             <div className="mt-10 flex items-center gap-x-4">
               <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-600">We focus on</h4>
-              <div className="h-px flex-auto bg-gray-100" />
+              <div className="h-px flex-auto bg-gray-600" />
             </div>
             <ul
               role="list"
