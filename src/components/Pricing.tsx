@@ -95,7 +95,7 @@ export function Pricing() {
               Since 2023, we continue to expand our pallete, gain more expertise, and better understand you&apos;re needs
             </p>
             <div className="mt-10 flex items-center gap-x-4">
-              <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-600">We focus on</h4>
+              <h4 className="flex-none text-sm font-semibold leading-6 text-green-600">We focus on</h4>
               <div className="h-px flex-auto bg-gray-600" />
             </div>
             <ul
@@ -104,7 +104,7 @@ export function Pricing() {
             >
               {includedFeatures.map((feature) => (
                 <li key={feature} className="flex gap-x-3">
-                  <CheckIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <CheckIcon className="h-6 w-5 flex-none text-green-600" aria-hidden="true" />
                   {feature}
                 </li>
               ))}
@@ -120,7 +120,7 @@ export function Pricing() {
                 </p>
                 <a
                   href="#"
-                  className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="mt-10 block w-full rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Get a quote
                 </a>
@@ -131,7 +131,6 @@ export function Pricing() {
             </div>
           </div>
         </div>
-          
       </Container>
     </section>
   )

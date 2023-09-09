@@ -30,7 +30,7 @@ export function Hero() {
         710 45th St, West Palm Beach, FL 33407
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="/register">Request a quote today</Button>
+        <Button href="/register" color="green">Request a quote today</Button>
         
       </div>
       <div className="mt-36 lg:mt-44">
