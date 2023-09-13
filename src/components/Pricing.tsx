@@ -72,7 +72,7 @@ export function Pricing() {
     <section
       id="pricing"
       aria-label="Pricing"
-      className="bg-slate-200 py-20 sm:py-32"
+      className="bg-white py-20 sm:py-32"
     >
       <Container>
         <div className="md:text-center">
@@ -122,11 +122,8 @@ export function Pricing() {
                   href="#"
                   className="mt-10 block w-full rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Get a quote
+                  Schedule a quote
                 </a>
-                <p className="mt-6 text-xs leading-5 text-gray-600">
-                  Allot 24 hours for a response
-                </p>
               </div>
             </div>
           </div>

@@ -18,14 +18,14 @@ export default function Login() {
           <Logo className="h-10 w-auto" />
         </Link>
       </div>
-      <h2 className="mt-20 text-lg font-semibold text-gray-900">
+      <h2 className="font-display mt-20 text-lg font-semibold text-gray-900">
         Sign in to your account
       </h2>
       <p className="mt-2 text-sm text-gray-700">
         Don’t have an account?{' '}
         <Link
           href="/register"
-          className="font-medium text-blue-600 hover:underline"
+          className="font-medium text-green-600 hover:underline"
         >
           Sign up
         </Link>{' '}
@@ -46,7 +46,7 @@ export default function Login() {
           required
         />
         <div>
-          <Button type="submit" variant="solid" color="blue" className="w-full">
+          <Button type="submit" variant="solid" color="green" className="w-full">
             <span>
               Sign in <span aria-hidden="true">&rarr;</span>
             </span>

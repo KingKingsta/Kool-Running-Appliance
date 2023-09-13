@@ -12,7 +12,7 @@ export function CallToAction() {
       className="relative overflow-hidden bg-slate-50 py-32"
     >
       <Image src={backgroundImage} width="2245" height="1636" alt="Background"className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"/> 
-      <Container className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <Container className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <form
           action="#"
           className="mt-10 relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2"
@@ -45,10 +45,10 @@ export function CallToAction() {
             name="description-area"
             required
           />
-          <div className="col-span-full">
-            <Button type="submit" variant="solid" color="green" className="w-full">
+          <div className="col-span-full mx-auto">
+            <Button type="submit" variant="solid" color="green" className="w-full mx-6 py-2 text-md">
               <span>
-                Get quote <span aria-hidden="true">&rarr;</span>
+                Schedule a quote <span aria-hidden="true">&rarr;</span>
               </span>
             </Button>
           </div>

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import CompanyLogo from '@/images/CompanyLogo.jpg'
+import CompanyLogo from '@/images/1200px-Flag_of_Jamaica.svg.webp'
 
 export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (

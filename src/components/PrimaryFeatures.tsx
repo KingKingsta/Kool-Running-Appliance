@@ -6,37 +6,37 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/backgrounds/background-services.jpg'
-import fixingWasher from '@/images/service photos/fixing washer.jpg'
-import fixingSink from '@/images/service photos/fixing sink.jpg'
-import fixingAC from '@/images/service photos/fixing ac.jpg'
-import fixingFridge from '@/images/service photos/fixing fridge.webp'
+import backgroundImage from '@/images/backgrounds/background-services-lightgreen.jpg'
+import fixingWasher from '@/images/service photos/fixing-washer-machine.jpg'
+import fixingStove from '@/images/service photos/fixing-stove.webp'
+import fixingDishwasher from '@/images/service photos/fixing-dishwaher.jpg'
+import fixingFridge from '@/images/service photos/fixing-fridge.jpg'
 
 
 const features = [
   {
-    title: 'Payroll',
+    title: 'Washer & Dryer',
     description:
-      "Everything about the Washer",
+      "About Washer & Dryer",
     image: fixingWasher,
   },
   {
-    title: 'Payroll',
+    title: 'Refrigerators & Ice Makers',
     description:
-      "Everything about the Fridge",
+      "About Refrigerators & Ice Makers",
     image: fixingFridge,
   },
   {
-    title: 'VAT handling',
+    title: 'Stove & Ovens',
     description:
-      "Everything about the Sink",
-    image: fixingSink,
+      "About Stove & Ovens",
+    image: fixingStove,
   },
   {
-    title: 'Reporting',
+    title: 'Dishwashers',
     description:
-      'Everything about the AC',
-    image: fixingAC,
+      'About Dishwashers',
+    image: fixingDishwasher,
   },
 ]
 
@@ -62,7 +62,7 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-label="Services we provde"
-      className="relative overflow-hidden bg-blue-600 pb-28 pt-20 sm:py-32"
+      className="relative overflow-hidden pb-28 pt-20 sm:py-32"
     >
       <Image
         className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
@@ -73,14 +73,10 @@ export function PrimaryFeatures() {
         unoptimized
       />
       <Container className="relative">
-        <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+        <div className="max-w-2xl mx-auto text-center md:mx-auto md:text-center xl:max-w-none">
+          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl md:text-5xl">
+            We cover a variety of appliances
           </h2>
-          <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren&apos;t that picky about minor
-            details like tax compliance.
-          </p>
         </div>
         <Tab.Group
           as="div"
@@ -90,15 +86,15 @@ export function PrimaryFeatures() {
           {({ selectedIndex }) => (
             <>
               <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-5">
-                <Tab.List className="relative z-10 flex gap-x-4 whitespace-nowrap px-4 w-full sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
+                <Tab.List className="relative z-10 flex flex-col gap-y-4 whitespace-nowrap px-4 w-full lg:flex lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
                   {features.map((feature, featureIndex) => (
                     <div
                       key={feature.title}
                       className={clsx(
                         'group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6',
                         selectedIndex === featureIndex
-                          ? 'bg-white lg:bg-white/10 lg:ring-1 lg:ring-inset lg:ring-white/10'
-                          : 'hover:bg-white/10 lg:hover:bg-white/5',
+                          ? 'bg-white lg:bg-white/50 lg:ring-1 lg:ring-inset lg:ring-white/10'
+                          : 'hover:bg-white/30 lg:hover:bg-white/5',
                       )}
                     >
                       <h3>
@@ -106,8 +102,8 @@ export function PrimaryFeatures() {
                           className={clsx(
                             'font-display text-lg ui-not-focus-visible:outline-none',
                             selectedIndex === featureIndex
-                              ? 'text-blue-600 lg:text-white'
-                              : 'text-blue-100 hover:text-white lg:text-white',
+                              ? 'text-slate-700 font-bold lg:text-slate-700 lg:font-bold'
+                              : 'text-slate-600 hover:text-slate-700 lg:text-slate-600',
                           )}
                         >
                           <span className="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none" />
@@ -118,8 +114,8 @@ export function PrimaryFeatures() {
                         className={clsx(
                           'mt-2 hidden text-sm lg:block',
                           selectedIndex === featureIndex
-                            ? 'text-white'
-                            : 'text-blue-100 group-hover:text-white',
+                            ? 'text-slate-800'
+                            : 'text-slate-500 group-hover:text-slate-500',
                         )}
                       >
                         {feature.description}
@@ -131,19 +127,15 @@ export function PrimaryFeatures() {
               <Tab.Panels className="lg:col-span-7">
                 {features.map((feature) => (
                   <Tab.Panel key={feature.title} unmount={false}>
-                    <div className="relative sm:px-6 lg:hidden">
-                      <div className="absolute -inset-x-4 bottom-[-4.25rem] top-[-6.5rem] bg-white/10 ring-1 ring-inset ring-white/10 sm:inset-x-0 sm:rounded-t-xl" />
-                      <p className="relative mx-auto max-w-2xl text-base text-white sm:text-center">
-                        {feature.description}
-                      </p>
-                    </div>
-                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                    <div className="mt-10 max-h-[40rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 w-auto lg:mt-0 lg:w-[67.8125rem]">
                       <Image
                         className="w-full"
                         src={feature.image}
                         alt=""
                         priority
-                        sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 90vw, 45rem"
+                        width={1000}
+                        height={550}
+                        sizes="(max-width: 1024px) 67.8125rem, (max-width: 640px) 90vw, 45rem"
                       />
                     </div>
                   </Tab.Panel>

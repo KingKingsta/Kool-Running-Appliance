@@ -31,6 +31,10 @@ export default {
       maxWidth: {
         '2xl': '40rem',
       },
+      boxShadow: {
+        'buttonShadow': '0px 0px 12px 0px rgba(0, 0, 0, 0.25) inset, 0px 2px 8px 0px rgba(0, 0, 0, 0.25)',
+      },
+
     },
   },
   plugins: [formsPlugin, headlessuiPlugin],

@@ -26,12 +26,12 @@ export function Hero() {
           <span className="relative text-green-600">Appliance</span>
         </span>{' '}
       </h1>
-      <p className="mx-auto mt-6 max-w-fit text-lg px-4 rounded-2xl tracking-tight text-slate-700 hover:bg-slate-100">
+      <p className="group mx-auto mt-6 max-w-fit text-lg px-4 rounded-2xl tracking-tight text-slate-700 hover:bg-slate-100 hover:text-green-800">
         710 45th St, West Palm Beach, FL 33407
+        <span className='hidden group-hover:visible group-hover:mx-4'>Test</span>
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         <Button href="/register" color="green">Request a quote today</Button>
-        
       </div>
       <div className="mt-36 lg:mt-44">
         <p className="font-display text-base text-slate-900">

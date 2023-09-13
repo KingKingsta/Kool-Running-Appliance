@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     default: 'Kool Running Appliance - Appliance repair team servicing Palm Beach County Florida',
   },
   description:
-    'We service your appliances while keeping your warranty',
+    'We service your appliances under warranty',
 }
 
 const inter = Inter({
