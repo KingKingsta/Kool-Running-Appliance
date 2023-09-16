@@ -1,26 +1,21 @@
-import { CallToAction } from '@/components/CallToAction'
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
-import { Hero } from '@/components/Hero'
-import { Pricing } from '@/components/Pricing'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { Testimonials } from '@/components/Testimonials'
+import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
+import { Hero } from '@/components/Hero';
+import { Booking } from '@/components/Booking';
+import { Services } from '@/components/Services';
+import { Testimonials } from '@/components/Testimonials';
 
 export default function Home() {
-
-  
-
-  return (
-    <>
-        <Header />
-        <main>
-          <Hero />
-          <PrimaryFeatures />
-          <Pricing />
-          <Testimonials />
-          <CallToAction />
-        </main>
-        <Footer />
-    </>
-  )
+    return (
+        <>
+            <Header />
+            <main>
+                <Hero />
+                <Testimonials />
+                <Services />
+                <Booking />
+            </main>
+            <Footer />
+        </>
+    );
 }

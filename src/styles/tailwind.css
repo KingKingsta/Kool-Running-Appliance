@@ -8,4 +8,16 @@
         background: #009B3A;
         box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25) inset, 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
     }
-  }
+
+    .backgroundImage {
+        background-image: url(../images/backgrounds/landing-image.png);
+    }
+
+    .container {
+        @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+    }
+
+    .backgroundTint {
+        background-cover: rgba(217, 217, 217, 0.70);
+    }
+}
